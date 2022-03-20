@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: ATTAleckSans;
 }
 
 .App-logo {
@@ -28,11 +29,12 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  height: 85px;
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+}
+.footer svg {
+  border-right: 1px solid #C6C6C8;
 }

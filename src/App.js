@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Settings from "./components/settings/settings";
+import { Routes, Route} from "react-router-dom";
+import {ReactComponent as LightningIcon} from './assets/images/lightning-bolt.svg';
+import Status from "./components/settings/status/status";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Settings/>} />
+          <Route path="/info" element={<Status/>} />
+      </Routes>
     </div>
   );
 }
